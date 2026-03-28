@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlockHack 2025 — Mine. Build. Hack.</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Particles -->
+<div class="particles" id="particles"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Block<span>Hack</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#tracks">Tracks</a></li>
+    <li><a href="#prizes">Prizes</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#sponsors">Sponsors</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="#register" class="nav-btn">▶ Register</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="stars" id="stars"></div>
+
+  <!-- Floating Blocks -->
+  <div class="floating-blocks" id="floating-blocks"></div>
+
+  <!-- Hero Content -->
+  <div class="hero-content">
+    <span class="hero-badge">⛏ INDIA'S BIGGEST MINECRAFT-THEMED HACKATHON</span>
+    <h1 class="hero-title glitch">BLOCK<span class="green">HACK</span><br><span class="blue">1.0</span></h1>
+    <p class="hero-tagline">MINE • BUILD • INNOVATE • CONQUER</p>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">📅 Date</span>
+        <span class="hero-meta-value">APRIL 24–25</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">📍 Location</span>
+        <span class="hero-meta-value">SNJB's Late Sau Kantabai Bhavarlalji Jain College of Engineering, Chandwad</span>
+      </div>
+      <div class="hero-meta-item">
+        <span class="hero-meta-label">💰 Prize Pool</span>
+        <span class="hero-meta-value">₹15,000</span>
+      </div>
+    </div>
+
+    <!-- Hotbar -->
+    <div class="hotbar">
+      <div class="hotbar-slot active"><span class="hotbar-slot-num">1</span>⛏</div>
+      <div class="hotbar-slot"><span class="hotbar-slot-num">2</span>💎</div>
+      <div class="hotbar-slot"><span class="hotbar-slot-num">3</span>🔥</div>
+      <div class="hotbar-slot"><span class="hotbar-slot-num">4</span>⚡</div>
+      <div class="hotbar-slot"><span class="hotbar-slot-num">5</span>🤖</div>
+      <div class="hotbar-slot"><span class="hotbar-slot-num">6</span>🌍</div>
+      <div class="hotbar-slot"><span class="hotbar-slot-num">7</span>🔒</div>
+      <div class="hotbar-slot"><span class="hotbar-slot-num">8</span>💡</div>
+      <div class="hotbar-slot"><span class="hotbar-slot-num">9</span>🏆</div>
+    </div>
+
+    <div class="hero-btns">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScUx_51g5zzer32xWyddTFStIr1BHrZno2SCPKV38uRIcLw8Q/viewform"
+         class="btn-primary"
+         target="_blank">
+         ⛏ Mine Your Spot
+      </a>
+      <a href="#about" class="btn-secondary">▶ Learn More</a>
+    </div>
+  </div>
+
+  <!-- Terrain -->
+  <div class="terrain" id="terrain"></div>
+</section>
+
+<!-- COUNTDOWN -->
+<div id="countdown">
+  <span class="section-eyebrow">🔴 REDSTONE TIMER ACTIVATED</span>
+  <h2 class="countdown-title">Time Until BlockHack Begins</h2>
+  <div class="countdown-grid">
+    <div class="countdown-unit">
+      <div class="countdown-num" id="cd-days">00</div>
+      <span class="countdown-label">DAYS</span>
+    </div>
+    <div class="countdown-colon">:</div>
+    <div class="countdown-unit">
+      <div class="countdown-num" id="cd-hours">00</div>
+      <span class="countdown-label">HOURS</span>
+    </div>
+    <div class="countdown-colon">:</div>
+    <div class="countdown-unit">
+      <div class="countdown-num" id="cd-mins">00</div>
+      <span class="countdown-label">MINUTES</span>
+    </div>
+    <div class="countdown-colon">:</div>
+    <div class="countdown-unit">
+      <div class="countdown-num" id="cd-secs">00</div>
+      <span class="countdown-label">SECONDS</span>
+    </div>
+  </div>
+</div>
+
+<div class="block-divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header">
+    <span class="section-eyebrow">🌿 ABOUT THE HACK</span>
+    <h2 class="section-title">What is BlockHack?</h2>
+    <p class="section-sub">12 hours of pure, unbridled creation</p>
+  </div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>
+        <strong style="color:var(--grass)">BlockHack 2026</strong> is a fast-paced
+        <strong>12-hour Minecraft-themed hackathon</strong> focused on
+        <strong>AI/ML and AR/VR</strong>, where innovation meets execution.
+        Organised by SNJB's Late Sau Kantabai Bhavarlalji Jain College of Engineering,
+        it brings together students to <strong style="color:var(--grass)">build real-world solutions</strong> under pressure.
+      </p>
+      <p>
+        Like Minecraft's infinite world, your imagination is the only limit.
+        Whether you're mining through data, designing intelligent systems, or
+        crafting immersive experiences — <strong style="color:var(--diamond)">every block matters</strong>.
+      </p>
+      <p>
+        In just one day, participants will design, develop, and present
+        impactful projects while collaborating in teams, learning from peers,
+        and pushing their limits in a high-energy environment.
+      </p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card">
+        <span class="stat-num">12</span>
+        <span class="stat-label">HOURS NON-STOP</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">⚡</span>
+        <span class="stat-label">REAL-WORLD PROBLEMS</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">🧠</span>
+        <span class="stat-label">HANDS-ON LEARNING</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">🏆</span>
+        <span class="stat-label">COMPETE & WIN</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="block-divider stone"></div>
+
+<!-- TRACKS -->
+<section id="tracks">
+  <div class="section-header">
+    <span class="section-eyebrow" style="color:var(--diamond)">💎 BIOMES / TRACKS</span>
+    <h2 class="section-title" style="color:var(--diamond)">Choose Your Biome</h2>
+    <p class="section-sub">Pick your dimension and start building</p>
+  </div>
+  <div class="tracks-grid">
+
+    <div class="track-card" style="--card-accent: var(--creeper); --card-color: rgba(62,207,78,0.1);">
+      <div class="track-icon" id="grass-icon"></div>
+      <div class="track-name">🌿 GREEN FOREST<br>— AI & ML</div>
+      <p class="track-desc">Build intelligent systems using machine learning, computer vision, NLP, or generative AI. From smart assistants to predictive models.</p>
+      <span class="track-tag">AI • ML • LLMs • Vision</span>
+    </div>
+
+    <div class="track-card" style="--card-accent: var(--diamond); --card-color: rgba(93,232,240,0.1);">
+      <div class="track-icon" id="vr-icon"></div>
+      <div class="track-name"> END PORTAL<br>— AR & VR Experiences</div>
+      <p class="track-desc">Step into immersive worlds. Build augmented and virtual reality applications that enhance real-life experiences, from interactive simulations and virtual environments to next-gen user interfaces and storytelling.</p>
+      <span class="track-tag">WebXR • Three.js • Spark AR • Unity • VR Basics</span>
+    </div>
+
+  </div>
+</section>
+
+<div class="block-divider obsidian"></div>
+
+<!-- PRIZES -->
+<section id="prizes">
+  <div class="section-header">
+    <span class="section-eyebrow" style="color:var(--gold)">🏆 LOOT CHEST</span>
+    <h2 class="section-title" style="color:var(--gold)">Prize Inventory</h2>
+    <p class="section-sub">Rewards will be revealed soon</p>
+  </div>
+
+  <div style="text-align:center; padding:60px 20px; border:2px dashed var(--gold); border-radius:12px; max-width:600px; margin:0 auto;">
+    <h3 style="font-family:'VT323', monospace; font-size:2rem; letter-spacing:3px; color:var(--gold); margin-bottom:10px;">
+      🎁 PRIZES COMING SOON
+    </h3>
+    <p style="color:var(--stone); font-size:1rem; margin-bottom:20px;">
+      We're preparing exciting rewards for our builders. Stay tuned for official prize announcements.
+    </p>
+  </div>
+</section>
+
+<div class="block-divider"></div>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="section-header">
+    <span class="section-eyebrow">📅 TIMELINE</span>
+    <h2 class="section-title">The Adventure Map</h2>
+    <p class="section-sub">Your journey from registration to victory</p>
+  </div>
+
+  <div class="timeline-track">
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <div class="tl-time">MARCH 29, 2026</div>
+        <div class="tl-event">📢 REGISTRATIONS OPEN</div>
+        <p class="tl-desc">Portals open! Register your team and secure your spot in BlockHack 2026.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--gold);border-color:#cc9900"></div>
+      <div class="tl-content">
+        <div class="tl-time">APRIL 12, 2026 — 11:59 PM</div>
+        <div class="tl-event">📋 REGISTRATIONS CLOSE</div>
+        <p class="tl-desc">Final call! Team entries close and submissions move to screening phase.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--diamond);border-color:#2a9aa5"></div>
+      <div class="tl-content">
+        <div class="tl-time">APRIL 14, 2026 — 11:59 PM</div>
+        <div class="tl-event">💡 PHASE 1 RESULTS</div>
+        <p class="tl-desc">Shortlisted teams announced for the offline hackathon round.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--emerald);border-color:#2a7a4a"></div>
+      <div class="tl-content">
+        <div class="tl-time">APRIL 24, 2026 — 5:00 PM</div>
+        <div class="tl-event">🚪 ENTRY & DINNER</div>
+        <p class="tl-desc">Participants arrive, check-in, and fuel up before the adventure begins.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--redstone);border-color:#8b0000"></div>
+      <div class="tl-content">
+        <div class="tl-time">APRIL 24, 2026 — 7:00 PM</div>
+        <div class="tl-event">🎤 OPENING CEREMONY</div>
+        <p class="tl-desc">Introduction, event briefing, and judge felicitation before the hack begins.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--gold);border-color:#cc9900"></div>
+      <div class="tl-content">
+        <div class="tl-time">APRIL 24, 2026 — 9:00 PM</div>
+        <div class="tl-event">⚒️ HACKATHON BEGINS</div>
+        <p class="tl-desc">12 hours of non-stop building, coding, and innovation starts now.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--diamond);border-color:#2a9aa5"></div>
+      <div class="tl-content">
+        <div class="tl-time">APRIL 25, 2026 — 3:00 AM</div>
+        <div class="tl-event">🧠 MENTORSHIP SESSION</div>
+        <p class="tl-desc">Midnight guidance from mentors to help refine and improve your builds.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--redstone);border-color:#8b0000"></div>
+      <div class="tl-content">
+        <div class="tl-time">APRIL 25, 2026 — 9:00 AM</div>
+        <div class="tl-event">📦 HACKATHON ENDS</div>
+        <p class="tl-desc">Time's up! Submit your projects and prepare for evaluation.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--emerald);border-color:#2a7a4a"></div>
+      <div class="tl-content">
+        <div class="tl-time">APRIL 25, 2026 — 10:30 AM</div>
+        <div class="tl-event">🎯 FINAL PRESENTATIONS</div>
+        <p class="tl-desc">Teams pitch their solutions (2+5 min) to judges.</p>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-dot" style="background:var(--gold);border-color:#cc9900"></div>
+      <div class="tl-content">
+        <div class="tl-time">APRIL 25, 2026 — 2:00 PM</div>
+        <div class="tl-event">🏆 PRIZE DISTRIBUTION</div>
+        <p class="tl-desc">Winners are announced and BlockHack champions are crowned.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="block-divider stone"></div>
+
+<!-- SPONSORS -->
+<section id="sponsors">
+  <div class="section-header">
+    <span class="section-eyebrow" style="color:var(--gold)">🤝 SPONSORS & PARTNERS</span>
+    <h2 class="section-title">The Overworld Council</h2>
+    <p class="section-sub">Our partners will be revealed soon</p>
+  </div>
+
+  <div style="text-align:center; padding:60px 20px; border:2px dashed var(--stone); border-radius:12px; max-width:600px; margin:0 auto;">
+    <h3 style="font-family:'VT323', monospace; font-size:2rem; letter-spacing:3px; color:var(--diamond); margin-bottom:10px;">
+      🚧 COMING SOON
+    </h3>
+    <p style="color:var(--stone); font-size:1rem; margin-bottom:20px;">
+      We're teaming up with amazing partners to power BlockHack 2026. Stay tuned for sponsor announcements.
+    </p>
+    <a href="mailto:contact@blockhack.in" class="btn-secondary">
+      📩 Become a Sponsor
+    </a>
+  </div>
+</section>
+
+<div class="block-divider"></div>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-header">
+    <span class="section-eyebrow">❓ CRAFTING GUIDE</span>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-sub">Got questions? The wiki has answers.</p>
+  </div>
+  <div class="faq-grid">
+    <div class="faq-item open">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Who can participate in BlockHack?
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-a">
+        <div class="faq-a-inner">BlockHack is open to all college students, recent graduates (within 1 year), and high school students aged 16+. All skill levels welcome — from first-time hackers to seasoned coders. Solo or teams of up to 4.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Is BlockHack free to participate?
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-a">
+        <div class="faq-a-inner">Absolutely FREE! We believe great ideas shouldn't be gated by fees. Registration, meals, swag, workshops — all covered for selected participants. Just bring your laptop and creativity.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Can I participate online (remote)?
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-a">
+        <div class="faq-a-inner">Yes! BlockHack 2.0 runs in hybrid mode. Online participants get access to all workshops, mentors, and can submit projects remotely. On-site participants enjoy the full immersive Minecraft-themed experience.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Do I need to know Minecraft to participate?
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-a">
+        <div class="faq-a-inner">Ha! Not at all. BlockHack is Minecraft-THEMED, not Minecraft-based. It's a regular hackathon with pixel aesthetics and gaming vibes. Your projects should solve real-world problems with technology.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        What should I build? Are there restrictions?
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-a">
+        <div class="faq-a-inner">Build anything! Web apps, mobile apps, APIs, hardware, AI models, browser extensions — any technology stack is allowed. Projects must be built during the hackathon (no prior work). Open source libraries and APIs are welcome.</div>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        How are projects judged?
+        <span class="arrow">▶</span>
+      </div>
+      <div class="faq-a">
+        <div class="faq-a-inner">Projects are evaluated on: Innovation (25%), Technical Complexity (25%), Impact (25%), and Presentation (25%). A panel of industry mentors, investors, and tech leaders serve as judges. Every team gets feedback!</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER BANNER -->
+<div class="register-banner" id="register">
+  <h2>Ready to Enter the Arena?</h2>
+  <p>Join a 12-hour hackathon. Build, innovate, and compete in AI/ML & AR/VR.</p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScUx_51g5zzer32xWyddTFStIr1BHrZno2SCPKV38uRIcLw8Q/viewform"
+     target="_blank"
+     class="btn-dark">
+     ⛏ REGISTER NOW
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">BlockHack 2.0</div>
+  <div class="footer-tagline">Mine • Build • Conquer</div>
+  <div class="footer-social">
+    <a href="#" class="social-btn">𝕏 Twitter</a>
+    <a href="#" class="social-btn">📸 Instagram</a>
+    <a href="#" class="social-btn">💼 LinkedIn</a>
+    <a href="#" class="social-btn">💬 Discord</a>
+  </div>
+  <div class="footer-links">
+    <a href="#">Code of Conduct</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Sponsor Us</a>
+    <a href="#">Contact</a>
+    <a href="#">MLH</a>
+  </div>
+  <p class="footer-copy">© 2025 BlockHack — Crafted with ❤️ and redstone dust</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

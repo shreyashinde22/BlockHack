@@ -1,5 +1,5 @@
-# BlockHack – HackVerse 2025 Website
-A dynamic, Minecraft-themed website for the HackVerse 2025 hackathon organised by GDG.
+# BlockHack 
+A dynamic, Minecraft-themed website for the BlockHack 2026 hackathon organised by GDG.
 
 ## 📌 Overview
 BlockHack is a responsive, dynamic website designed for the HackVerse 2025 hackathon.  

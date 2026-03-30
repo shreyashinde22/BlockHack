@@ -1246,3 +1246,28 @@ footer::before {
   .countdown-num { width: 80px; height: 80px; font-size: 1.8rem; }
   .faq-q { font-size: 0.45rem; }
 }
+
+.footer-contact {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.footer-contact h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-contact a {
+  color: var(--diamond);
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+.section-note {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.85;
+}

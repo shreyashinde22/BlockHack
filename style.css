@@ -642,6 +642,26 @@ section {
   margin-top: 1rem;
   letter-spacing: 1px;
 }
+.track-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: centre;
+}
+
+.icon-ai {
+  background-image: url('https://img.icons8.com/fluency/96/artificial-intelligence.png');
+}
+
+.icon-vr {
+  background-image: url('https://img.icons8.com/fluency/96/virtual-reality.png');
+}
+
+.icon-iot {
+  background-image: url('https://img.icons8.com/fluency/96/smart-home-connection.png');
+}
 
 /* ─── PRIZES ─── */
 #prizes {
@@ -833,6 +853,9 @@ section {
 }
 
 /* ─── SPONSORS ─── */
+.btn-secondary {
+  pointer-events: auto;
+}
 #sponsors {
   background: #0a0a0a;
   text-align: center;
@@ -903,6 +926,44 @@ section {
   letter-spacing: 1px;
 }
 .sponsor-name span { color: var(--grass); }
+.sponsors-row.centre {
+  justify-content: center;
+}
+
+.sponsor-logo.featured {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(192,192,192,0.4);
+}
+
+.sponsor-tag {
+  font-size: 0.8rem;
+  margin-top: 6px;
+  color: var(--stone);
+  letter-spacing: 1px;
+}
+
+.tier-block {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.coming-soon .placeholder {
+  opacity: 0.5;
+  border-style: dashed;
+}
+
+.sponsor-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.sponsor-cta p {
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  color: var(--stone);
+}
 
 /* ─── FAQ ─── */
 #faq {

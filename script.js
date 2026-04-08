@@ -183,3 +183,7 @@ window.addEventListener('scroll', () => {
     nav.style.borderBottomWidth = '4px';
   }
 });
+//sponsor mail 
+function sendMail() {
+  window.location.href = "mailto:gdg.oncampussnjb@gmail.com";
+}

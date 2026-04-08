@@ -36,10 +36,10 @@
   <div class="floating-blocks" id="floating-blocks"></div>
 
   <!-- Hero Content -->
-  <div class="hero-content">
-    <span class="hero-badge">⛏ Build. Break. Innovate. Welcome to BlockVerse.</span>
-    <h1 class="hero-title glitch">BLOCK<span class="green">VERSE</span><br></h1>
-    <p class="hero-tagline">MINE • BUILD • INNOVATE • CONQUER</p>
+<div class="hero-content">
+  <span class="hero-badge">⛏ Build. Break. Innovate. Welcome to BlockVerse.</span>
+  <h1 class="hero-title glitch">BLOCK<span class="green">VERSE</span><br></h1>
+  <p class="hero-tagline">MINE • BUILD • INNOVATE • CONQUER</p>
 
     <div class="hero-meta">
       <div class="hero-meta-item">
@@ -53,7 +53,6 @@
       <div class="hero-meta-item">
         <span class="hero-meta-label">💰 Prize Pool</span>
         <span class="hero-meta-value">₹70,000</span>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScUx_51g5zzer32xWyddTFStIr1BHrZno2SCPKV38uRIcLw8Q/viewform" class="nav-btn">▶ Register Now</a>
       </div>
     </div>
 
@@ -176,30 +175,77 @@
 
   <div class="tracks-grid">
 
+    <!-- AI / ML -->
     <div class="track-card" style="--card-accent: var(--creeper); --card-color: rgba(62,207,78,0.1);">
-      <div class="track-icon" id="grass-icon"></div>
-      <div class="track-name">🌿 GREEN FOREST<br>— AI & ML</div>
-      <p class="track-desc">Build intelligent systems using machine learning, computer vision, NLP, or generative AI. From smart assistants to predictive models.</p>
-      <span class="track-tag">AI • ML • LLMs • Vision</span>
-    </div>
+      <div class="track-icon icon-ai"></div>
 
-    <div class="track-card" style="--card-accent: var(--diamond); --card-color: rgba(93,232,240,0.1);">
-      <div class="track-icon" id="vr-icon"></div>
-      <div class="track-name"> END PORTAL<br>— AR & VR Experiences</div>
-      <p class="track-desc">Step into immersive worlds. Build augmented and virtual reality applications that enhance real-life experiences, from interactive simulations and virtual environments to next-gen user interfaces and storytelling.</p>
-      <span class="track-tag">WebXR • Three.js • Spark AR • Unity • VR Basics</span>
-    </div>
+      <div class="track-name">
+        🌿 GREEN FOREST<br>— AI & ML
+      </div>
 
-    <div class="track-card" style="--card-accent: #f39c12; --card-color: rgba(243,156,18,0.1);">
-      <div class="track-icon" id="iot-icon"></div>
-      <div class="track-name">⚡ REDSTONE LAB<br>— IoT & Smart Systems</div>
       <p class="track-desc">
-        Design and build connected systems using sensors, microcontrollers, and real-time data.
-        Create solutions for smart homes, agriculture, healthcare, or industrial automation with a focus on real-world impact.
-        <br><br>
-        <b>Note:</b> Hardware devices will not be provided. Participants must bring their own components or use simulation tools.
+        Build intelligent systems using machine learning, NLP, computer vision, or generative AI 
+        to solve real-world problems across industries.
       </p>
-      <span class="track-tag">IoT • Arduino • ESP32 • Raspberry Pi • Sensors • Automation</span>
+
+      <ul class="track-list">
+        <li>🏙️ Smart Cities</li>
+        <li>⚖️ Legal Tech</li>
+        <li>🌾 Agriculture & Food Security</li>
+        <li>🔐 Cybersecurity</li>
+      </ul>
+
+      <span class="track-tag">AI • ML • LLMs • Vision • NLP</span>
+    </div>
+
+    <!-- AR / VR -->
+    <div class="track-card" style="--card-accent: var(--diamond); --card-color: rgba(93,232,240,0.1);">
+      <div class="track-icon icon-vr"></div>
+
+      <div class="track-name">
+        🥽 END PORTAL<br>— AR & VR
+      </div>
+
+      <p class="track-desc">
+        Build immersive augmented and virtual reality experiences that redefine interaction, 
+        learning, and storytelling.
+      </p>
+
+      <ul class="track-list">
+        <li>🎓 Education & Skill Training</li>
+        <li>🧠 Mental Health & Wellness</li>
+        <li>🎮 Gaming</li>
+        <li>🏛️ Cultural Heritage & Tourism</li>
+      </ul>
+
+      <span class="track-tag">WebXR • Three.js • Unity • Spark AR</span>
+    </div>
+
+    <!-- IoT -->
+    <div class="track-card" style="--card-accent: #f39c12; --card-color: rgba(243,156,18,0.1);">
+      <div class="track-icon icon-iot"></div>
+
+      <div class="track-name">
+        ⚡ REDSTONE LAB<br>— IoT
+      </div>
+
+      <p class="track-desc">
+        Design connected systems using sensors, microcontrollers, and real-time data 
+        to create impactful smart solutions.
+      </p>
+
+      <ul class="track-list">
+        <li>🏗️ Smart Infrastructure</li>
+        <li>🌱 Precision Agriculture</li>
+        <li>🌪️ Disaster Management & Safety</li>
+        <li>❤️ Healthcare Monitoring</li>
+      </ul>
+
+      <p class="track-note">
+        ⚠️ Hardware devices will not be provided. Bring your own components or use simulations.
+      </p>
+
+      <span class="track-tag">IoT • Arduino • ESP32 • Raspberry Pi • Sensors</span>
     </div>
 
   </div>
@@ -232,7 +278,7 @@
   <div class="section-header">
     <span class="section-eyebrow">📅 TIMELINE</span>
     <h2 class="section-title">The Adventure Map</h2>
-    <p class="section-sub">Your journey from registration to victory</p>
+    <p class="section-sub">From registration to becoming champions</p>
   </div>
 
   <div class="timeline-track">
@@ -244,13 +290,13 @@
         <div class="tl-time">MARCH 30, 2026</div>
         <div class="tl-event">📢 REGISTRATIONS OPEN</div>
         <p class="tl-desc">
-          Portals open! Register your team and secure your spot in BlockVerse 2026.
+          Step into BlockVerse. Form your team and secure your slot.
         </p>
 
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScUx_51g5zzer32xWyddTFStIr1BHrZno2SCPKV38uRIcLw8Q/viewform"
            class="btn-primary"
            target="_blank">
-           ⛏ Mine Your Spot
+           ⛏ Register Now
         </a>
       </div>
     </div>
@@ -262,35 +308,20 @@
         <div class="tl-time">APRIL 12, 2026 — 11:59 PM</div>
         <div class="tl-event">📋 REGISTRATIONS CLOSE</div>
         <p class="tl-desc">
-          Final call! Team entries close and submissions move to screening phase.
+          Last chance to enter. Submissions move to screening.
         </p>
       </div>
     </div>
 
-    <!-- PHASE 1 START -->
+    <!-- PHASE 1 -->
     <div class="tl-item">
       <div class="tl-dot" style="background:var(--diamond);border-color:#2a9aa5"></div>
       <div class="tl-content">
-        <div class="tl-time">APRIL 12, 2026 — 11:59 PM</div>
-        <div class="tl-event">💡 PHASE 1 STARTS</div>
+        <div class="tl-time">APRIL 12 – APRIL 14, 2026</div>
+        <div class="tl-event">💡 IDEA SUBMISSION ROUND</div>
         <p class="tl-desc">
-          Submit your idea presentation (PPT) for evaluation.
+          Submit your idea presentation (PPT) and stand out.
         </p>
-
-        <a href="https://forms.gle/W2PwME3xk5DttyGJ9"
-           class="btn-primary"
-           target="_blank">
-           📤 Upload Your PPT
-        </a>
-      </div>
-    </div>
-
-    <!-- PHASE 1 END -->
-    <div class="tl-item">
-      <div class="tl-dot" style="background:var(--diamond);border-color:#2a9aa5"></div>
-      <div class="tl-content">
-        <div class="tl-time">APRIL 14, 2026 — 11:59 PM</div>
-        <div class="tl-event">💡 PHASE 1 ENDS</div>
       </div>
     </div>
 
@@ -298,11 +329,11 @@
     <div class="tl-item">
       <div class="tl-dot" style="background:var(--emerald);border-color:#2a7a4a"></div>
       <div class="tl-content">
-        <div class="tl-time">APRIL 16, 2026 — 11:59 PM</div>
-        <div class="tl-event">💡 PHASE 1 RESULTS</div>
+        <div class="tl-time">APRIL 16, 2026</div>
+        <div class="tl-event">🎯 SHORTLIST ANNOUNCED</div>
         <p class="tl-desc">
-          Shortlisted teams announced for the offline hackathon round.
-          Candidates have to pay an entry fee of 
+          Selected teams advance to the offline round.<br>
+          Entry fee: ₹400 per team.
         </p>
       </div>
     </div>
@@ -312,9 +343,9 @@
       <div class="tl-dot" style="background:var(--emerald);border-color:#2a7a4a"></div>
       <div class="tl-content">
         <div class="tl-time">APRIL 24, 2026 — 5:00 PM</div>
-        <div class="tl-event">🚪 ENTRY & DINNER</div>
+        <div class="tl-event">🚪 CHECK-IN & DINNER</div>
         <p class="tl-desc">
-          Teams arrive, check-in, and fuel up with a hearty dinner before the hackathon begins.
+          Arrive, register, and recharge before the battle begins.
         </p>
       </div>
     </div>
@@ -326,31 +357,21 @@
         <div class="tl-time">APRIL 24, 2026 — 7:00 PM</div>
         <div class="tl-event">🎤 OPENING CEREMONY</div>
         <p class="tl-desc">
-          Introduction, event briefing, and judge felicitation before the hack begins.
+          Briefing, introductions, and kickoff announcements.
         </p>
       </div>
     </div>
 
-    <!-- HACK START -->
-    <div class="tl-item">
+    <!-- HACKATHON -->
+    <div class="tl-item highlight">
       <div class="tl-dot" style="background:var(--gold);border-color:#cc9900"></div>
       <div class="tl-content">
         <div class="tl-time">APRIL 24, 2026 — 9:00 PM</div>
         <div class="tl-event">⚒️ HACKATHON BEGINS</div>
         <p class="tl-desc">
-          12 hours of non-stop building, coding, and innovation starts now.
-        </p>
-      </div>
-    </div>
-
-    <!-- MENTORSHIP -->
-    <div class="tl-item">
-      <div class="tl-dot" style="background:var(--diamond);border-color:#2a9aa5"></div>
-      <div class="tl-content">
-        <div class="tl-time">APRIL 25, 2026 — 3:00 AM</div>
-        <div class="tl-event">🧠 MENTORSHIP SESSION</div>
-        <p class="tl-desc">
-          Midnight guidance from mentors to help refine and improve your builds.
+          12 hours. Zero excuses. Build something that matters.
+          <br><br>
+          💡 <strong>Dedicated mentors will guide you throughout the hackathon.</strong>
         </p>
       </div>
     </div>
@@ -362,7 +383,7 @@
         <div class="tl-time">APRIL 25, 2026 — 9:00 AM</div>
         <div class="tl-event">📦 HACKATHON ENDS</div>
         <p class="tl-desc">
-          Time's up! Submit your projects and prepare for evaluation.
+          Submit your project and prepare for judgement.
         </p>
       </div>
     </div>
@@ -374,7 +395,7 @@
         <div class="tl-time">APRIL 25, 2026</div>
         <div class="tl-event">🎯 FINAL PRESENTATIONS</div>
         <p class="tl-desc">
-          Teams pitch their solutions (2+5 minutes) to judges.
+          Pitch your solution (2 + 5 minutes) to the judges.
         </p>
       </div>
     </div>
@@ -386,7 +407,7 @@
         <div class="tl-time">APRIL 25, 2026</div>
         <div class="tl-event">🏆 PRIZE DISTRIBUTION</div>
         <p class="tl-desc">
-          Winners are announced and BlockVerse champions are crowned.
+          Winners announced. Champions rise.
         </p>
       </div>
     </div>
@@ -395,25 +416,51 @@
 </section>
 
 <div class="block-divider stone"></div>
-
 <!-- SPONSORS -->
 <section id="sponsors">
   <div class="section-header">
     <span class="section-eyebrow" style="color:var(--gold)">🤝 SPONSORS & PARTNERS</span>
-    <h2 class="section-title">The Overworld Council</h2>
-    <p class="section-sub">Our partners will be revealed soon</p>
+    <h2 class="section-title">Backed by Innovators</h2>
+    <p class="section-sub">Organisations supporting BlockVerse 2026</p>
   </div>
 
-  <div style="text-align:center; padding:60px 20px; border:2px dashed var(--stone); border-radius:12px; max-width:600px; margin:0 auto;">
-    <h3 style="font-family:'VT323', monospace; font-size:2rem; letter-spacing:3px; color:var(--diamond); margin-bottom:10px;">
-      🚧 COMING SOON
-    </h3>
-    <p style="color:var(--stone); font-size:1rem; margin-bottom:20px;">
-      We're teaming up with amazing partners to power BlockVerse 2026. Stay tuned for sponsor announcements.
-    </p>
-    <a href="mailto:contact@BlockVerse.in" class="btn-secondary">
-      📩 Become a Sponsor
-    </a>
+  <div class="sponsor-tiers">
+
+    <!-- SILVER SPONSOR -->
+    <div class="tier-block">
+      <div class="sponsor-tier-label silver-tier">🥈 SILVER SPONSOR</div>
+
+      <div class="sponsors-row centre">
+        <div class="sponsor-logo featured" style="border-color:#c0c0c0">
+          <span class="sponsor-name">
+            YSM <span>INFO SOLUTIONS</span>
+          </span>
+          <p class="sponsor-tag">₹12K Sponsor</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMING SOON -->
+    <div class="tier-block coming-soon">
+      <div class="sponsor-tier-label">🚧 MORE SPONSORS COMING</div>
+
+      <div class="sponsors-row">
+        <div class="sponsor-logo placeholder">Your Logo Here</div>
+        <div class="sponsor-logo placeholder">Your Logo Here</div>
+        <div class="sponsor-logo placeholder">Your Logo Here</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="sponsor-cta">
+    <p>Want to partner with BlockVerse?</p>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gdg.oncampussnjb@gmail.com"
+   target="_blank"
+   class="btn-secondary">
+   📩 Become a Sponsor
+</a>
   </div>
 </section>
 
@@ -546,11 +593,16 @@
       </div>
     </div>
 
-    <!--Q10-->
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">Is there a specific problem statement?<span class="arrow">▶</span></div>
+    <!-- Q10 --> 
+     <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        Is there a specific problem statement?
+        <span class="arrow">▶</span>
+      </div>
       <div class="faq-a">
-        <div class="faq-a-inner">No, there is no fixed problem statement. Participants are free to choose any problem and build innovative solutions based on their ideas.</div>
+        <div class="faq-a-inner">
+          No, there is no fixed problem statement. Participants are free to choose any problem and build innovative solutions based on their ideas.
+        </div>
       </div>
     </div>
 
@@ -603,8 +655,8 @@
     <h4>📞 Contact Team</h4>
     <p>Namrata Pagariya: <a href="tel:8623944083">8623944083</a></p>
     <p>Lisha Nahata: <a href="tel:9595700800">9595700800</a></p>
-    <p>Chirag Shah: <a href="tel:8856900432">8856900432</a></p>
-    <p>Siddhesh Nikumb: <a href="tel:8799870319">8799870319</a></p>
+    <p>Chiraj Shah: <a href="tel:8856900432">8856900432</a></p>
+    <p>Siddhesh Nikhumb: <a href="tel:8799870319">8799870319</a></p>
   </div>
 
   <p class="footer-copy">© 2026 BlockVerse — Crafted with ❤️ GDG_SNJB</p>

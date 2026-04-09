@@ -32,27 +32,7 @@ blockEmojis.forEach((emoji, i) => {
   floatContainer.appendChild(b);
 });
 
-// ─── TERRAIN ───
-const terrainEl = document.getElementById('terrain');
-const terrainColors = [
-  ['#5d9e3f','#3d7a26'], // grass
-  ['#8B6340','#7a5530'], // dirt
-  ['#8e8e8e','#5a5a5a'], // stone
-];
-for (let i = 0; i < 40; i++) {
-  const block = document.createElement('div');
-  block.className = 'terrain-block';
-  const h = 32 + Math.floor(Math.random()*64);
-  const tc = terrainColors[Math.floor(Math.random()*terrainColors.length)];
-  block.style.cssText = `
-    width:32px;height:${h}px;
-    background:${tc[0]};
-    border-right:4px solid ${tc[1]};
-    border-top:4px solid rgba(255,255,255,0.15);
-    flex-shrink:0;
-  `;
-  terrainEl.appendChild(block);
-}
+
 
 // ─── PARTICLES ───
 const particlesEl = document.getElementById('particles');
@@ -74,22 +54,23 @@ for (let i = 0; i < 20; i++) {
 
 // ─── COUNTDOWN ───
 function updateCountdown() {
-  const target = new Date('2026-04-24T09:00:00');
+  // April 24 2026, 9:00 PM local time
+  const target = new Date('2026-04-24T21:00:00');
   const now = new Date();
   const diff = target - now;
+
   if (diff <= 0) {
-    ['cd-days','cd-hours','cd-mins','cd-secs'].forEach(id => document.getElementById(id).textContent = '00');
+    ['cd-days','cd-hours','cd-mins','cd-secs'].forEach(id => {
+      document.getElementById(id).textContent = '00';
+    });
     return;
   }
-  const days = Math.floor(diff / 86400000);
-  const hours = Math.floor((diff % 86400000) / 3600000);
-  const mins = Math.floor((diff % 3600000) / 60000);
-  const secs = Math.floor((diff % 60000) / 1000);
+
   const pad = n => String(n).padStart(2, '0');
-  document.getElementById('cd-days').textContent = pad(days);
-  document.getElementById('cd-hours').textContent = pad(hours);
-  document.getElementById('cd-mins').textContent = pad(mins);
-  document.getElementById('cd-secs').textContent = pad(secs);
+  document.getElementById('cd-days').textContent  = pad(Math.floor(diff / 86400000));
+  document.getElementById('cd-hours').textContent = pad(Math.floor((diff % 86400000) / 3600000));
+  document.getElementById('cd-mins').textContent  = pad(Math.floor((diff % 3600000) / 60000));
+  document.getElementById('cd-secs').textContent  = pad(Math.floor((diff % 60000) / 1000));
 }
 updateCountdown();
 setInterval(updateCountdown, 1000);
@@ -101,7 +82,7 @@ function toggleFaq(el) {
 }
 
 // ─── HOTBAR ───
-document.querySelectorAll('.hotbar-slot').forEach((slot, i) => {
+document.querySelectorAll('.hotbar-slot').forEach((slot) => {
   slot.addEventListener('click', () => {
     document.querySelectorAll('.hotbar-slot').forEach(s => s.classList.remove('active'));
     slot.classList.add('active');
@@ -128,7 +109,7 @@ document.querySelectorAll('.track-card, .stat-card, .tl-content, .faq-item, .spo
 // ─── PIXEL ICON BUILDER ───
 function makePixelIcon(containerId, colors, pattern) {
   const el = document.getElementById(containerId);
-  if (!el) return;
+  if (!el) return; // guard: skip if element doesn't exist
   pattern.forEach((row) => {
     row.forEach((col) => {
       const cell = document.createElement('div');
@@ -183,7 +164,8 @@ window.addEventListener('scroll', () => {
     nav.style.borderBottomWidth = '4px';
   }
 });
-//sponsor mail 
+
+// ─── SPONSOR MAIL ───
 function sendMail() {
   window.location.href = "mailto:gdg.oncampussnjb@gmail.com";
 }

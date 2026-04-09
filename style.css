@@ -853,48 +853,53 @@ section {
 }
 
 /* ─── SPONSORS ─── */
-.btn-secondary {
-  pointer-events: auto;
-}
+/* ===== SPONSORS SECTION ===== */
 #sponsors {
   background: #0a0a0a;
   text-align: center;
+  padding: 4rem 1rem;
 }
 
+/* Container */
 .sponsor-tiers {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
 }
 
+/* ===== TIER LABEL ===== */
 .sponsor-tier-label {
   font-family: 'Press Start 2P', monospace;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   color: var(--stone);
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.sponsor-tier-label::before, .sponsor-tier-label::after {
+.sponsor-tier-label::before,
+.sponsor-tier-label::after {
   content: '';
   flex: 1;
-  height: 4px;
+  height: 3px;
   background: var(--stone-dark);
 }
 
-.sponsor-tier-label.diamond-tier { color: var(--diamond); }
-.sponsor-tier-label.diamond-tier::before,
-.sponsor-tier-label.diamond-tier::after { background: var(--diamond); opacity: 0.3; }
+/* Silver Highlight */
+.silver-tier {
+  color: #c0c0c0;
+}
+.silver-tier::before,
+.silver-tier::after {
+  background: #c0c0c0;
+  opacity: 0.3;
+}
 
-.sponsor-tier-label.gold-tier { color: var(--gold); }
-.sponsor-tier-label.gold-tier::before,
-.sponsor-tier-label.gold-tier::after { background: var(--gold); opacity: 0.3; }
-
+/* ===== ROW LAYOUT ===== */
 .sponsors-row {
   display: flex;
   gap: 2rem;
@@ -902,67 +907,67 @@ section {
   flex-wrap: wrap;
 }
 
+/* ===== SILVER SPONSOR CARDS ===== */
+.sponsor-card {
+  background: #111;
+  border: 3px solid #c0c0c0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 200px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 0 #888, 0 0 20px rgba(192,192,192,0.25);
+}
+
+.sponsor-card img {
+  max-width: 110px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.sponsor-card h3 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* ===== NORMAL SPONSORS ===== */
 .sponsor-logo {
   background: #111;
-  border: 4px solid var(--stone-dark);
-  padding: 1.5rem 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s;
-  min-width: 160px;
+  border: 3px solid var(--stone-dark);
+  padding: 1rem 1.5rem;
+  min-width: 140px;
+  text-align: center;
+  transition: 0.3s;
 }
 
 .sponsor-logo:hover {
   border-color: var(--grass);
   transform: translateY(-4px);
-  box-shadow: 0 8px 0 var(--grass-dark), 0 0 20px rgba(93,158,63,0.2);
+  box-shadow: 0 6px 0 var(--grass-dark),
+              0 0 15px rgba(93,158,63,0.2);
 }
 
-.sponsor-name {
+.sponsor-logo img {
+  max-width: 80px;
+  margin-bottom: 6px;
+}
+
+.sponsor-logo span {
+  display: block;
   font-family: 'Press Start 2P', monospace;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   color: #fff;
-  letter-spacing: 1px;
-}
-.sponsor-name span { color: var(--grass); }
-.sponsors-row.centre {
-  justify-content: center;
 }
 
-.sponsor-logo.featured {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px rgba(192,192,192,0.4);
-}
-
-.sponsor-tag {
-  font-size: 0.8rem;
-  margin-top: 6px;
-  color: var(--stone);
-  letter-spacing: 1px;
-}
-
+/* ===== SPACING ===== */
 .tier-block {
-  margin-bottom: 3rem;
   text-align: center;
-}
-
-.coming-soon .placeholder {
-  opacity: 0.5;
-  border-style: dashed;
-}
-
-.sponsor-cta {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.sponsor-cta p {
-  font-family: 'VT323', monospace;
-  font-size: 1.2rem;
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
-  color: var(--stone);
 }
 
 /* ─── FAQ ─── */

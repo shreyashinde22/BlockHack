@@ -964,6 +964,31 @@ section {
   font-size: 0.5rem;
   color: #fff;
 }
+/* Tier Labels */
+.title-tier {
+  color: gold;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.premium-tier {
+  color: #d4af37;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Card Sizes */
+.sponsor-card.title img {
+  height: 120px;
+}
+
+.sponsor-card.premium img {
+  height: 100px;
+}
+
+.sponsor-card.silver img {
+  height: 80px;
+}
 
 /* ===== SPACING ===== */
 .tier-block {

@@ -52,6 +52,14 @@ for (let i = 0; i < 20; i++) {
   particlesEl.appendChild(p);
 }
 
+// ─── NAVBAR ───
+const ham = document.getElementById('ham');
+const menu = document.getElementById('menu');
+ham.addEventListener('click', () => {
+  ham.classList.toggle('open');
+  menu.classList.toggle('open');
+});
+
 // ─── COUNTDOWN ───
 function updateCountdown() {
   // April 24 2026, 9:00 PM local time

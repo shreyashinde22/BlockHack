@@ -51,6 +51,8 @@ body {
 }
 
 /* ─── NAV ─── */
+
+/* ── Nav shell ── */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -65,29 +67,32 @@ nav {
   height: 64px;
 }
 
+/* ── Logo ── */
 .nav-logo {
   font-family: 'Press Start 2P', monospace;
   font-size: 0.85rem;
   color: var(--creeper);
   text-shadow: 2px 2px 0 var(--grass-dark), 4px 4px 0 rgba(0,0,0,0.5);
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 .nav-logo span { color: var(--diamond); }
 
+/* ── Desktop links ── */
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   list-style: none;
+  align-items: center;
 }
-
 .nav-links a {
   font-family: 'Press Start 2P', monospace;
   font-size: 0.5rem;
   color: var(--stone);
   text-decoration: none;
   letter-spacing: 1px;
-  transition: color 0.2s;
   padding: 4px 8px;
+  transition: color 0.2s;
 }
 .nav-links a:hover {
   color: var(--creeper);
@@ -95,17 +100,21 @@ nav {
   outline: 2px solid var(--creeper);
 }
 
+/* ── Desktop buttons ── */
+.nav-actions { display: flex; gap: 12px; align-items: center; }
+
 .nav-btn {
   font-family: 'Press Start 2P', monospace;
   font-size: 0.45rem;
   background: var(--grass);
-  color: #000;
+  color: var(--bedrock);
   padding: 10px 16px;
   border: none;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   letter-spacing: 1px;
+  white-space: nowrap;
   box-shadow: 4px 4px 0 var(--grass-dark), 8px 8px 0 rgba(0,0,0,0.4);
   transition: all 0.1s;
 }
@@ -114,6 +123,57 @@ nav {
   box-shadow: 2px 2px 0 var(--grass-dark), 4px 4px 0 rgba(0,0,0,0.4);
 }
 .nav-btn:active { transform: translate(4px, 4px); box-shadow: none; }
+
+/* ── Hamburger ── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 6px;
+  border: none;
+  background: none;
+}
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--creeper);
+  transition: all 0.2s;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── Mobile menu ── */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(10,10,10,0.97);
+  border-top: 2px solid var(--grass-dark);
+  padding: 1rem 2rem 1.5rem;
+}
+.mobile-menu a {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.5rem;
+  color: var(--stone);
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(93,158,63,0.2);
+}
+.mobile-menu a:last-of-type { border-bottom: none; }
+.mobile-menu a:hover { color: var(--creeper); }
+.mobile-btns { display: flex; flex-direction: column; gap: 12px; margin-top: 16px; }
+.mobile-btns .nav-btn { text-align: center; display: block; }
+.mobile-menu.open { display: flex; }
+
+/* ── Breakpoint ── */
+@media (max-width: 900px) {
+  .nav-links, .nav-actions { display: none; }
+  .hamburger { display: flex; }
+  nav { padding: 0 1.5rem; }
+}
 
 /* ─── HERO ─── */
 #hero {

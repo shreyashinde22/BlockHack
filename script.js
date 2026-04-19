@@ -90,12 +90,15 @@ function toggleFaq(el) {
 }
 
 // ─── HOTBAR ───
-document.querySelectorAll('.hotbar-slot').forEach((slot) => {
-  slot.addEventListener('click', () => {
-    document.querySelectorAll('.hotbar-slot').forEach(s => s.classList.remove('active'));
-    slot.classList.add('active');
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.hotbar-slot').forEach((slot) => {
+    slot.addEventListener('click', () => {
+      document.querySelectorAll('.hotbar-slot').forEach(s => s.classList.remove('active'));
+      slot.classList.add('active');
+    });
   });
 });
+
 
 // ─── SCROLL REVEAL ───
 const observer = new IntersectionObserver((entries) => {

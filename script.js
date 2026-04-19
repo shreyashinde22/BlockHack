@@ -177,3 +177,28 @@ window.addEventListener('scroll', () => {
 function sendMail() {
   window.location.href = "mailto:gdg.oncampussnjb@gmail.com";
 }
+
+// ─── RESULTS ───
+
+const selectedTeams = [
+    "Teams yet to be announced... Stay tuned for the big reveal! 🚀"
+  ];
+
+  const modal = document.getElementById("resultsModal");
+  const btn   = document.getElementById("viewResultsBtn");
+  const span  = document.getElementsByClassName("close-modal")[0];
+  const list  = document.getElementById("teamsList");
+
+  selectedTeams.forEach((team, index) => {
+    const div = document.createElement("div");
+    div.className = "team-card";
+    div.innerHTML = `
+      <span style="font-family:'Press Start 2P',monospace; font-size:0.4rem; color:var(--gold); display:block; margin-bottom:6px;">#${index + 1}</span>
+      <span style="font-family:'VT323',monospace; font-size:1.3rem; letter-spacing:1px;">${team}</span>
+    `;
+    list.appendChild(div);
+  });
+
+  btn.onclick    = () => modal.style.display = "block";
+  span.onclick   = () => modal.style.display = "none";
+  window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };

@@ -152,6 +152,67 @@
 
 <div class="block-divider"></div>
 
+<!-- ─── RESULTS SECTION ─── -->
+<div class="block-divider stone"></div>
+
+<section id="results" style="background: #0a0a0f; padding: 4rem 2rem; text-align: center;">
+
+  <div class="section-header">
+    <span class="section-eyebrow" style="color: var(--diamond);">▸ ROUND 1 ◂</span>
+    <h2 class="section-title" style="color: var(--diamond); text-shadow: 2px 2px 0 #1a8a90;">
+      MINED & REFINED
+    </h2>
+    <p class="section-sub">raw groups smelted into finalists</p>
+  </div>
+
+  <!-- Stat Cards -->
+  <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; max-width: 700px; margin: 0 auto 3rem;">
+    <div class="stat-card" style="min-width: 160px; border-color: var(--diamond);">
+      <span class="stat-num" style="color: var(--diamond); font-size: 1.4rem;">30</span>
+      <span class="stat-label">Teams Selected</span>
+    </div>
+    <div class="stat-card" style="min-width: 160px;">
+      <span class="stat-num" style="font-size: 1.4rem;">182</span>
+      <span class="stat-label">Total Groups</span>
+    </div>
+    <div class="stat-card" style="min-width: 160px; border-color: var(--gold);">
+      <span class="stat-num" style="color: var(--gold); font-size: 1.4rem;">16.5%</span>
+      <span class="stat-label">Pass Rate</span>
+    </div>
+  </div>
+
+  <!-- Results Banner + Button -->
+  <div class="results-container">
+    <div class="results-banner">
+      <span class="results-label">🏆 ROUND 1 RESULTS:</span>
+      <span class="results-stats">30 / 182 Groups Selected</span>
+    </div>
+    <button id="viewResultsBtn" class="btn-results">
+      🔍 View Results (Teams Yet to be announced)
+    </button>
+  </div>
+
+</section>
+
+<div class="block-divider"></div>
+
+<!-- ─── RESULTS MODAL ─── -->
+<div id="resultsModal" class="results-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 style="font-family: 'Press Start 2P', monospace; font-size: 0.8rem; color: var(--diamond); letter-spacing: 2px; margin-bottom: 0.5rem; line-height: 1.8;">
+      [ SELECTED TEAMS ]
+    </h2>
+    <p style="font-family: 'VT323', monospace; font-size: 1.2rem; color: var(--stone); letter-spacing: 2px; margin-bottom: 1rem;">
+      Top 30 — Round 1 Qualifiers
+    </p>
+    <div class="teams-grid" id="teamsList"></div>
+  </div>
+</div>
+
+
+
+
 <!-- ABOUT -->
 <section id="about">
   <div class="section-header">

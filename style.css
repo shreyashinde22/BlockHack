@@ -201,6 +201,27 @@ nav {
   z-index: 0;
 }
 
+.hero-powered {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #aaa;
+  letter-spacing: 1px;
+}
+
+.powered-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.hero-powered .highlight {
+  color: #00ff88;
+  font-weight: 600;
+}
+
 /* Stars */
 .stars {
   position: absolute;

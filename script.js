@@ -181,7 +181,7 @@ function sendMail() {
 // ─── RESULTS ───
 
 const selectedTeams = [
-    "Teams yet to be announced... Stay tuned for the big reveal! 🚀"
+    " Agri Innovators ","Team Avinya"," AiOS"," SyntrixIA"," Algorise"," SafeSphere"," AuraFarm","Team Vidhidnya","Scribe"," ArjunArrays","Kisan AI"," PathFinders"," APEX BUILDERS","Team sankalp"," Bit Misfit"," Bug Busters","Smart Farming Squad","404 BRAIN NOT FOUND","Syntax Squad"," Spirit","Captiprenaurs","<AI> Artisans","NEXTGEN BUILDERS","CODOPHY","Visioneers"," MIND CRAFTERS","Team OpticFlow","Team Trinetra","Commits"," Bithawks"
   ];
 
   const modal = document.getElementById("resultsModal");
